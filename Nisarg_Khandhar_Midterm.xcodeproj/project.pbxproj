@@ -14,6 +14,8 @@
 		520A28442542677E00433A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520A28432542677E00433A34 /* Assets.xcassets */; };
 		520A28472542677E00433A34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520A28462542677E00433A34 /* Preview Assets.xcassets */; };
 		520A284A2542677E00433A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520A28482542677E00433A34 /* LaunchScreen.storyboard */; };
+		521402C0254306B400C71A3D /* CheckScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521402BF254306B400C71A3D /* CheckScore.swift */; };
+		521402C6254307FB00C71A3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521402C5254307FB00C71A3D /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		520A28462542677E00433A34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		520A28492542677E00433A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520A284B2542677E00433A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521402BF254306B400C71A3D /* CheckScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckScore.swift; sourceTree = "<group>"; };
+		521402C5254307FB00C71A3D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		520A28392542677D00433A34 /* Nisarg_Khandhar_Midterm */ = {
 			isa = PBXGroup;
 			children = (
+				520A283E2542677D00433A34 /* ContentView.swift */,
+				521402C32543078400C71A3D /* Views */,
+				521402C22543077A00C71A3D /* Model */,
 				520A283A2542677D00433A34 /* AppDelegate.swift */,
 				520A283C2542677D00433A34 /* SceneDelegate.swift */,
-				520A283E2542677D00433A34 /* ContentView.swift */,
 				520A28432542677E00433A34 /* Assets.xcassets */,
 				520A28482542677E00433A34 /* LaunchScreen.storyboard */,
 				520A284B2542677E00433A34 /* Info.plist */,
@@ -76,6 +82,22 @@
 				520A28462542677E00433A34 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		521402C22543077A00C71A3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				521402C5254307FB00C71A3D /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		521402C32543078400C71A3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				521402BF254306B400C71A3D /* CheckScore.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +173,8 @@
 				520A283B2542677D00433A34 /* AppDelegate.swift in Sources */,
 				520A28422542677D00433A34 /* Nisarg_Khandhar_Midterm.xcdatamodeld in Sources */,
 				520A283D2542677D00433A34 /* SceneDelegate.swift in Sources */,
+				521402C0254306B400C71A3D /* CheckScore.swift in Sources */,
+				521402C6254307FB00C71A3D /* UserModel.swift in Sources */,
 				520A283F2542677D00433A34 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
