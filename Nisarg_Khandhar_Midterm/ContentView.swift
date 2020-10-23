@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var guess: String = ""
+    @State private var guess: Int? =  nil
     @State private var selection: Int? = nil
     @State private var tapped2 = false
     @State private var attempts: Int? = 5
+    @State private var selectedIndex : Int? = nil
+   
+
    
     
     var body: some View {
@@ -20,8 +23,8 @@ struct ContentView: View {
                 Text("I have a number between 1 to 25 you have 5 attempts can you guess the number correctly")
                     .font(.system(size: 30))
                    // .position(CGPoint(x: 20.0, y: 25.0))
-                
-                TextField("Type the Number", text: $guess)
+                var x = Int(self.guess ?? 0)
+                TextField("Type the Number", text: x)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .position(CGPoint(x: 200.0, y: 250.0))
                 
@@ -57,6 +60,11 @@ struct ContentView: View {
             
             
                 )
+                    .onTapGesture {
+                       // selectedIndex = idx
+                         print("Number is checked")
+                         self.tapped = true
+                    }
             }//VStack
             .navigationBarTitle("Nisarg_GuessingGame", displayMode: .inline)
             .navigationBarBackButtonHidden(true)
@@ -67,9 +75,22 @@ struct ContentView: View {
             
         }
         
-   
+         func isNumberChecked(){
+            var highest: Int = 0
+
+            func random() -> Int {
+                let r = arc4random_uniform(25) + 1
+                return Int(r)
+            }
+
+            var randomValue = random()
+            highest = max(highest, randomValue)
+            
+        }
     
 }
+
+
    // @IBAction func myAction(sender: AnyObject){}
 
 struct ContentView_Previews: PreviewProvider {
